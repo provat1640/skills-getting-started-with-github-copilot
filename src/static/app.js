@@ -75,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const activity = decodeURIComponent(deleteButton.dataset.activity);
     const email = decodeURIComponent(deleteButton.dataset.email);
+    deleteButton.disabled = true;
 
     try {
       const response = await fetch(
